@@ -1,0 +1,15 @@
+.display {
+    padding: 10px;
+    background: #333;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    font-size: 24px;
+}
+
+.input {
+    font-size: 18px;
+}
+
+.output {
+    font-size: 24px;
+}

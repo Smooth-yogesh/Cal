@@ -1,0 +1,48 @@
+.calculator {
+  width: 220px; /* Adjusted width to fit the larger buttons */
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+  gap: 1px; /* Optional: space between buttons */
+}
+
+.button {
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  background: #f4f4f4;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #e0e0e0;
+}
+
+/* Styling for the DEL button */
+.button.del {
+  background: #ff6666;
+  color: white;
+}
+
+.button.del:hover {
+  background: #ff4444;
+}
+
+/* Styling for the = button */
+.button.equals {
+  grid-column: span 2; /* Make the = button span 2 columns */
+  background: #4CAF50;
+  color: white;
+}
+
+.button.equals:hover {
+  background: #45a049;
+}
